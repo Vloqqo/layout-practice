@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Open-Sans";
+
+    src: url(fonts/font.woff2) format("woff2"),
+    url(/fonts/font.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Open-Sans";
+    font-optical-sizing: auto;
+    font-style: italic;
+    src: url(/fonts/font-italics.woff) format("woff"),
+    url(/fonts/font-italics.woff2) format("woff2");
+}
+
+* {
+    font-family: "Open-Sans";
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(56,62,76,255);
+    width: 100%;
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+    overflow: auto;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-right: 1vw;
+    border: solid #596170 0.1vw;
+    text-decoration-line: none;
+}
+
+header.hero {
+    display: flex;
+    background-image: url(/images/img11.jpg);
+    background-size: cover;
+    height: 60vh;
+    padding-top: 1vh;
+    color: white;
+}
+
+header.hero, h1.hch, p.hch {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.cards3 {
+    width: calc(70% /3);
+    background-color: #f2f2f2 ;
+    margin-top: 10vh;
+    margin-bottom: 5vh
+}
+
+.cards2 {
+    width: calc(70% /2)
+}
