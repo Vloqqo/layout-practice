@@ -77,18 +77,37 @@ p.hch {
 }
 
 [class^=cards] p, [class^=cards] h2, [class^=cards] a {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     margin-right: 1rem;
+    font-size: 16px
+}
+
+[class^=cards] h2 {
+    padding-top: 1vh;
+    font-size: 1.2rem;
 }
 
 [class^=cards] p {
-    padding-bottom: 5vh;
+    padding-bottom: 8vh;
     line-height: 1.2vw;
+    font-size: 13px
 }
-/* 
-[class^=cards] a {
 
-} */
+[class^=cards] {
+    position: relative;
+}
+
+section.row .cards3:first-child h2 {
+    color: #178a27;
+}
+
+section.row .cards3:nth-of-type(2) h2 {
+    color: rgba(22,134,193,255);
+}
+
+section.row .cards3:last-of-type h2 {
+    color: rgba(133,36,6,255);
+}
 
 section.row, section.row1 {
     display: flex;
@@ -97,19 +116,64 @@ section.row, section.row1 {
 }
 
 .cards3 {
-    width: calc(51% /3);
+    width: calc(57% /3);
     background-color: #f2f2f2 ;
     margin-top: 10vh;
     margin-bottom: 5vh;
     margin-right: 1vw;
 }
 
+a.green, a.blue, a.red {
+    left: 4.5vw;
+    bottom: 3vh;
+}
+
 a.green {
     padding: 1.5vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
     background-color: #178a27;
     border-radius: .2vw;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+}
+
+a.blue {
+    padding: 1.5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    background-color: rgba(22,134,193,255);
+    border-radius: .2vw;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+}
+
+a.red {
+    padding: 1.5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    background-color: rgba(133,36,6,255);
+    border-radius: .2vw;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+}
+
+a.grey {
+    padding: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    background-color: #ffffff;
+    border-radius: .4vw;
+    color: rgba(121,121,121,255);
+    text-decoration: none;
+    position: absolute;
+}
+
+a.green {
+    left: 4.2vw;
 }
 
 section.row2 {
@@ -126,6 +190,10 @@ section.row2 {
     margin-right: 1vw;
     word-wrap:break-word;
     line-height: 1.2vw;
+}
+
+.cards2 h2 {
+    text-align: center;
 }
 
 .cards2 p:first-of-type {
@@ -147,7 +215,8 @@ section.hc {
 }
 
 h2.hch {
-    text-shadow: .1vw .1vw #000000;
+    text-shadow: .1vw .1vw  grey;
+    font-size: 2rem;
 }
 
 
@@ -170,10 +239,18 @@ section.hc p {
     background-color:#f2f2f2;
 }
 
+.cards4 h2 {
+    text-align: center;
+}
+
 .cards1 {
     width: 58%;
     background-color: #f2f2f2;
     margin-bottom: 3vh;
+}
+
+.cards1 h2 {
+    margin-top: 6vh;
 }
 
 .cards1 p:first-of-type {
@@ -193,7 +270,9 @@ header.contact {
 
 .contact-form h2 {
     color: white;
-    text-shadow: .1vw .1vw #000000;
+    text-shadow: .1vw .1vw grey;
+    font-size: 2rem;
+    font-weight: normal;
 }
 
 .contact-form p {
@@ -211,26 +290,26 @@ section.three {
     justify-self: left;
     width: calc(50%/3);
     margin-left: 30vw;
+    position: relative;
 }
 
 .threel {
-    width: 20vw;
+    width: 18vw;
     padding: .4vw;
     text-indent: .2vw;
-    margin-bottom: .2vw;
+    margin-bottom: .8vw;
     border-radius: .25vw;
-
 }
 
 .one {
-    width: 15vw;
-    height: 10vh;
-    flex-flow: row wrap;
-    text-align:start;
-    align-self: flex-start;
-    justify-self: right;
+    padding-top: 1vh;
+    width: 18.5vw;
+    padding-bottom: 10.6vh;
     position: absolute;
-
+    text-indent: .4vw;
+    border-radius: .25vw;
+    left: 20.4vw;
+    top: 0vh;
 }
 
 input {
@@ -246,8 +325,8 @@ footer {
 
 footer > h2 {
     color: #666666;
-    letter-spacing: .1vw;
     font-size: 2rem;
+    font-weight: normal;
 }
 
 footer > p.info {
@@ -273,4 +352,39 @@ footer p:last-child {
 
 nav > a:first-child {
     background-color: rgba(73,80,95,255);
+}
+
+button {
+    padding: 1.4vh;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    border-radius: .6vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    right: 43.3vw;
+}
+
+.cards2 > a.grey {
+    right: 3vw;
+    top: 54vh;
+}
+
+.cards2 p:last-of-type {
+    padding-bottom: 6vh
+}
+
+.cards4 a.grey {
+    top: 51vh;
+    padding: .8rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    left: 3vw
+}
+
+.cards1 a.grey {
+    top: 79vh;
+    padding-top: .8rem;
+    padding-bottom: .8rem
 }
