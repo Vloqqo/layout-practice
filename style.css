@@ -116,7 +116,7 @@ section.row, section.row1 {
 }
 
 .cards3 {
-    width: calc(57% /3);
+    width: calc(53vw /3);
     background-color: #f2f2f2 ;
     margin-top: 10vh;
     margin-bottom: 5vh;
@@ -183,7 +183,7 @@ section.row2 {
 }
 
 .cards2 {
-    width: calc(58% /2);
+    width: calc(54vw /2);
     background-color: #f2f2f2 ;
     margin-top: 2vh;
     margin-bottom: 5vh;
@@ -232,11 +232,12 @@ section.hc p {
 }
 
 .cards4 {
-    width: calc(55% /4);
+    width: calc(50vw /4);
     margin: 1vh;
     margin-top: 5vh;
     margin-bottom: 3vh;
     background-color:#f2f2f2;
+    position: relative;
 }
 
 .cards4 h2 {
@@ -244,7 +245,7 @@ section.hc p {
 }
 
 .cards1 {
-    width: 58%;
+    width: 53vw;
     background-color: #f2f2f2;
     margin-bottom: 3vh;
 }
@@ -278,22 +279,23 @@ header.contact {
 .contact-form p {
     background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
-    margin-left: 30vw;
-    margin-right: 30vw;
     border-radius: .25vw;
     line-height: 3vh;
     padding: 1vw;
+    width: 37vw;
 }
 
 section.three {
+    display: flex;
     flex-flow: column wrap;
     justify-self: left;
     width: calc(50%/3);
-    margin-left: 30vw;
+    margin-left: vw;
     position: relative;
 }
 
 .threel {
+    display: flex;
     width: 18vw;
     padding: .4vw;
     text-indent: .2vw;
@@ -304,7 +306,7 @@ section.three {
 .one {
     padding-top: 1vh;
     width: 18.5vw;
-    padding-bottom: 10.6vh;
+    padding-bottom: 9.7vh;
     position: absolute;
     text-indent: .4vw;
     border-radius: .25vw;
@@ -362,13 +364,12 @@ button {
     background-color: rgb(0, 0, 0);
     color: white;
     font-size: 1rem;
-    position: absolute;
-    right: 43.3vw;
+    margin-left:20vw
 }
 
 .cards2 > a.grey {
     right: 3vw;
-    top: 54vh;
+    top: 48vh;
 }
 
 .cards2 p:last-of-type {
@@ -376,15 +377,61 @@ button {
 }
 
 .cards4 a.grey {
-    top: 51vh;
+    top: 47vh;
     padding: .8rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-    left: 3vw
+    left: 2.7vw
 }
 
 .cards1 a.grey {
-    top: 79vh;
+    top: 72vh;
     padding-top: .8rem;
     padding-bottom: .8rem
+}
+
+ header {
+    min-height: fit-content;
+    background-attachment: fixed;
+    background-position: center;
+ }
+
+ @media screen and (max-width: 1024px) {
+    header {
+        background-attachment: scroll;
+        line-height: 2vh;
+    }
+    .cards1 {
+        width: 80vw;
+    }
+    .cards4 {
+        width: calc(74vw /4);
+    }
+    [class^=cards] p {
+        line-height: 2vh
+    }
+    a.red, a.blue {
+        left: 5vw;
+        font-size: 10px
+    }
+    .cards2 {
+        width: calc(78vw /2);
+    }
+    .cards3:nth-of-type(2), .cards3:last-of-type {
+        width: calc(77vw /2);
+    }    
+    .cards3:first-of-type {
+        width: 80vw;
+        text-align: center
+    }
+    a.green {
+        left: 30.5vw;
+    }
+    img {
+        image
+    }
+}
+
+@media screen and (max-width: 520px){
+
 }
