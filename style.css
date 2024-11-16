@@ -152,7 +152,6 @@ a.red {
     border-radius: .3vw;
     color: white;
     text-decoration: none;
-    position: absolute;
 }
 
 a.grey {
@@ -160,10 +159,6 @@ a.grey {
     border-radius: .4vw;
     color: rgba(121, 121, 121, 255);
     text-decoration: none;
-}
-
-a.green {
-    left: 4.2vw;
 }
 
 section.row2 {
