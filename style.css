@@ -79,7 +79,9 @@ h1.hch {
 }
 
 p.hch {
-    margin-top: -2.5vw
+    margin-top: -2.5vw;
+    font-size: 24px;
+    font-weight: normal;
 }
 
 [class^=cards] p,
@@ -376,6 +378,7 @@ a.cardinfo.grey {
     padding: .5vw;
     padding-left: 1.5vw;
     padding-right: 1.5vw;
+    border: rgb(0, 0, 0, 0.2) 1px solid;
 }
 
 .cards1 a.cardinfo.grey {
